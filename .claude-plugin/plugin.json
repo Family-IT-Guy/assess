@@ -1,7 +1,7 @@
 {
   "name": "assess",
   "description": "Get sharper answers from AI by fixing the question, not the answer. /assess reads how you're directing the model and hands you a stronger way to ask, so it explores and pushes back instead of just running a mediocre prompt. Summon with /assess.",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "author": {
     "name": "Ben Gillenwater"
   }

@@ -23,7 +23,7 @@ Assess *how the user is directing the model*, instead of executing their prompt.
 
 2. **Hold the prompt to the lenses.** See [LENSES.md](LENSES.md) — seven lenses plus the principles behind them. Apply with judgment: weigh what's relevant, you don't have to tick every box.
 
-3. **Name the gap, don't bluff.** If you lack what you'd need to assess (or to answer) well, say so and name the missing context. Do not make a call regardless.
+3. **Name the gap, don't bluff.** If a gap can be resolved by reading what the prompt points to, read it instead of naming it. Whatever reading can't resolve — say so, name the missing context, don't bluff a call.
 
 4. **Bring a POV, then discuss.** Offer a sharpened senior-partner question-set, plus whatever divergent angles genuinely provoke a deeper or unconsidered direction. This is an agent-led conversation, one move at a time. Depth is emergent: go as far as the prompt warrants; the user redirects freely.
 
