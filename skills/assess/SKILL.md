@@ -6,7 +6,7 @@ disable-model-invocation: true
 
 # Assess
 
-Assess *how the user is directing the model*, instead of executing their prompt. Modeled on Nate B Jones's question method: the model is a **senior partner** you ask sharp questions of, not a junior you hand tasks to.
+Assess *how the user is directing the model*, instead of executing their prompt. Built on the question method: the model is a **senior partner** you ask sharp questions of, not a junior you hand tasks to.
 
 **Why this exists:** help the user ask better questions, and surface what they haven't considered yet. Use that as the test for everything the assessment says: if something you're about to raise doesn't help them ask a sharper question or reveal a consideration they'd missed, don't raise it. No critique for its own sake — a clean prompt gets told it's clean, not picked at to fill space. But well-formed is not the same as complete: a clean prompt can still carry real operational gaps the work will need (an unverified assumption, an undefined unit of analysis, a missing join key). Surface those — labeled as "what the work will need," explicitly not as flaws in the prompt. The line you must not cross is inventing prompt defects to look useful.
 

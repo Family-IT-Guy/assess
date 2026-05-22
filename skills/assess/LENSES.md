@@ -2,7 +2,7 @@
 
 The lenses `/assess` holds a prompt up to. **Apply with judgment** — weigh what's relevant to the prompt at hand, not all seven every time. These are lenses, not a scoring rubric.
 
-Grounding: Nate B Jones's "question method." The core shift — the model is now a **senior partner**, not a junior teammate. You direct it by asking sharp questions, not by issuing fully-specified tasks. A senior partner explores, synthesizes across all inputs, and pushes back; a junior mirrors and waits.
+Grounding: the question method. The core shift — the model is now a **senior partner**, not a junior teammate. You direct it by asking sharp questions, not by issuing fully-specified tasks. A senior partner explores, synthesizes across all inputs, and pushes back; a junior mirrors and waits.
 
 ## The seven lenses
 
@@ -14,7 +14,7 @@ Grounding: Nate B Jones's "question method." The core shift — the model is now
 6. **context** — Does the prompt supply, or point to, the inputs the model needs?
 7. **success** — Is it clear what a good output looks like *for the user's task* — the acceptance test, distinct from the thesis/direction?
 
-## Nate's three principles (source of lenses 1-5)
+## The three principles (source of lenses 1-5)
 
 1. **Flashlight intent** — convey your thesis (center of the beam) AND the edges (what to exclude). Not too open, not too closed.
 2. **Explore what good looks like** — for outputs hard to encode in an eval, pose multiple hard questions and let the model synthesize, rather than prescribing the weave.
