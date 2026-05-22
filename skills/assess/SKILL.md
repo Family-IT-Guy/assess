@@ -31,7 +31,7 @@ Assess *how the user is directing the model*, instead of executing their prompt.
 
 6. **Log it (last step, every time).** Append one line to `~/.claude/assess-log.jsonl`.
 
-   **Why:** the log lets the user review how they prompt over time — which lenses they keep missing, how their asks sharpen. It only pays off if entries stay comparable, so keep the schema stable.
+   **Why:** the log lets the user review how they prompt over time — which lenses they keep missing, how their questions sharpen. It only pays off if entries stay comparable, so keep the schema stable.
 
    Schema — one JSON object per line; use the short lens names from LENSES.md verbatim in `lenses_missed` so patterns aggregate:
    ```json
@@ -40,20 +40,17 @@ Assess *how the user is directing the model*, instead of executing their prompt.
 
 ## How to present it
 
-The steps above are what you *do*; this is the order you *show* it. 
+The steps above are what you *do*; this is what a strong reply reads like.
 
-Lead with the BLUF (bottom line up front) punchline
+Open with the single most useful thing — the sharpest way to re-ask the question, and the one change that matters most — stated plainly as the first thing the reader hits. Say what the prompt as written would likely produce without that change; the cost of the weak version teaches more than the fix alone. Then the supporting detail (the objective mirror, the lens-by-lens read, the devil's-advocate counter-thesis), but only where it adds something the opening didn't — if it restates, cut it.
 
-- **The sharpened ask** — the single best way to re-ask, in a line or two.
-- **The biggest lever + the as-is cost** — the one change that matters most, and what the prompt as written would likely produce without it. Showing the cost of the weak version is how the user learns, not just the fix.
-
-Then, below, the supporting detail: the objective mirror, the lens-by-lens read, the devil's-advocate counter-thesis. Detail earns its place only by adding something the BLUF didn't — if it restates, cut it. This skill teaches leading with the conclusion; it must practice it.
+Write the most concise, useful reply the principles produce, nothing more. The reader should get the point first because you stated it first — not because they found a heading that promised it. Don't announce the structure of your own answer; let the order carry it.
 
 ## After: fork or continue?
 
-The sharpened ask is the asset; this assessment dialogue is scaffolding that is now consuming the session's context window. So close by helping the user decide where to run the sharpened prompt — but only when the tradeoff is real:
+The sharpened prompt is the asset; this assessment dialogue is scaffolding that is now consuming the session's context window. So close by helping the user decide where to run the sharpened prompt — but only when the tradeoff is real:
 
-- **Fork / fresh context** — if the sharpened ask is self-contained, suggest rewinding or starting a fresh session and pasting it in, so the task runs on a clean context window instead of carrying all this meta-dialogue.
+- **Fork / fresh context** — if the sharpened prompt is self-contained, suggest rewinding or starting a fresh session and pasting it in, so the task runs on a clean context window instead of carrying all this meta-dialogue.
 - **Continue here** — if the shared context built during the assessment actually matters to the task, say so and stay.
 
 Skip this when it's obvious; raise it when fork-vs-continue would meaningfully change the outcome or the context budget.
