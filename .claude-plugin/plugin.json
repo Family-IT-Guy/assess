@@ -1,7 +1,7 @@
 {
   "name": "assess",
   "description": "Critique how you are directing the model: hold your prompt up to the question-method lenses and sharpen it, instead of executing it. Summon with /assess.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "Ben Gillenwater"
   }

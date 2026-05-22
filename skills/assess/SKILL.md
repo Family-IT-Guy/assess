@@ -29,15 +29,6 @@ Assess *how the user is directing the model*, instead of executing their prompt.
 
 5. **Devil's-advocate the direction.** Don't only sharpen toward the user's thesis — argue the strongest counter-thesis and name what their framing may be excluding. This is the senior-partner push-back (a junior mirrors; a senior challenges), and it directly serves the second half of the mission: surfacing what they haven't considered. Apply it to each strategic fork in the conversation, not just once at the top.
 
-6. **Log it (last step, every time).** Append one line to `~/.claude/assess-log.jsonl`.
-
-   **Why:** the log is raw material for later distillation — spotting recurring patterns in how the user prompts, for their own improvement and as raw material for teaching better prompting. An entry only earns its keep if it stays comparable across hundreds of assessments.
-
-   Schema — one JSON object per line; use the short lens names from LENSES.md verbatim in `lenses_missed` so patterns aggregate:
-   ```json
-   {"date":"YYYY-MM-DD","scope":"prompt|session|draft","original":"<prompt assessed, trimmed>","lenses_missed":["intent","edges"],"sharpened":"<one-line summary of the sharpened direction>","went":"<where the conversation landed>"}
-   ```
-
 ## How to present it (lead with the punchline)
 
 The steps above are what you *do*; this is the order you *show* it. Lead with a **TL;DR — "if you read nothing else, read this":**
@@ -60,6 +51,6 @@ Skip this when it's obvious; raise it when fork-vs-continue would meaningfully c
 
 If running this assessment surfaces a real signal that the *skill itself* could be sharper — most often when the user corrects or redirects you — flag the optimization potential to them in the moment, make the case briefly, and decide together whether to change the skill then and there. Flag it the way the skill teaches: lead with the point. Do not force it: most assessments surface no such signal, no quota of observations is owed, and saying nothing is the common correct outcome. Never queue it to a file — improvements happen live in conversation or not at all. (A prose improvements doc only grows and never drains; that is the anti-pattern to avoid.)
 
-## Composes with other tools
+## Composes with grilling
 
-Standalone tool — run it on its own, or before, during, or after a deeper grilling or stress-testing pass if you have one. If the prompt turns out to be a design or planning problem rather than a prompting problem, say so.
+Standalone tool. Run before, during, or after `/grill-me` or `/grill-with-docs`, or on its own. If the prompt turns out to be a design/plan problem rather than a prompting problem, say so and point to `/grill-me`. (`/grill-me` and `/grill-with-docs` come from Matt Pocock's skills repo: https://github.com/mattpocock/skills)

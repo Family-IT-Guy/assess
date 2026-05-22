@@ -14,8 +14,6 @@ Grounding: Nate B Jones's "question method." The core shift — the model is now
 6. **context** — Does the prompt supply, or point to, the inputs the model needs?
 7. **success** — Is it clear what a good output looks like *for the user's task* — the acceptance test, distinct from the thesis/direction?
 
-(Use these short names verbatim in the log's `lenses_missed`.)
-
 ## Nate's three principles (source of lenses 1-5)
 
 1. **Flashlight intent** — convey your thesis (center of the beam) AND the edges (what to exclude). Not too open, not too closed.
